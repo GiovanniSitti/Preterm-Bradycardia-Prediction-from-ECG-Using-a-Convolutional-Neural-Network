@@ -43,7 +43,7 @@ preterm-bradycardia-prediction-1d-fcn/
 │   ├── 03_data_preparation.m
 │   └── 04_train_fcn.m
 ├── README.md
-└── LICENSE
+
 ```
 
 ## Pipeline Overview
@@ -129,6 +129,7 @@ For each subject:
 * The remaining 30% are assigned to validation.
 
 The control and pre-bradycardia windows belonging to the same pair are always assigned to the same partition. This prevents one member of a matched pair from appearing in training while the other appears in validation. 
+
 ## 5. Fully Convolutional Network
 
 The classification model is a one-dimensional Fully Convolutional Network designed to learn temporal features directly from the ECG waveform.
